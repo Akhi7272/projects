@@ -1,0 +1,71 @@
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+/* shared style */
+
+/* banner style */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 90px 120px 0;
+}
+.nav-items{
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+.nav-item{
+    list-style: none;
+    margin-right: 20px;
+}
+.nav-link{
+    text-decoration: none;
+    color: #3A3A3A;
+}
+.brand{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #3A3A3A;
+}
+.banner-des{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 120px 0;
+
+}
+.banner-img{
+    background-image: url(./influencer-gear/images/Circle\ design.svg);
+}
+.banner-head{
+    font-size: 52px;
+    font-weight: bold;
+    color: #3A3A3A;
+}
+.btn{
+    color: white;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    border-radius: 41px;
+}
+.media-img{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 100px 165px;
+    text-align: center;
+}
+/* responsive media quiry */
+@media screen and (max-width:576px){
+    .navbar, 
+    .nav-items{
+        flex-direction: column;
+    }
+    .banner-des{
+        flex-direction: column-reverse;
+    }
+    .media-img{
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+    }
+}
